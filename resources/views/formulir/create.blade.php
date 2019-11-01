@@ -1,13 +1,19 @@
 @extends('adminbackend')
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/select2.min.css') }}">
+<style>
+	.content{
+		background-image:url("{{ asset('backend/assets/img/avatars/background.jpg') }}");
+		background-size: 100%;
+	}
+	</style>
 @endsection
 
 @section('content')
 <center><h5 class="card-title">Penilaian Kinerja Karyawan</h5></center>
     <div class="row justify-content-center">
             <div class="col-md-15">
-                <div class="card">
+                <div>
                     <div class="card-header">Formulir Karyawan</div>
                     <div class="card-body">
                     <form action="{{ route('formulir.store') }}" method="post" enctype="multipart/form-data">
@@ -60,7 +66,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-15">
-            <div class="card">
+            <div>
 
               <center><h3 class="card-header">Unsur Yang Di Nilai</h3></center>
                                           <div class="form-group">
@@ -121,7 +127,7 @@ ________________________________________________________________________________
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-15">
-            <div class="card">
+            <div>
               <div class="card-header">2.Kuantitas Kerja(Menilai Kuantitas tugas yang diselesaikan berdasarkan standar output/target yang ditetapkan untuk tugas).</div>
                 <br>
                     <br>
@@ -180,7 +186,7 @@ ________________________________________________________________________________
                     <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-15">
-            <div class="card">
+            <div>
               <div class="card-header">3.Kemampuan dalam menyelesaikan pekerjaan</div>
                 <br>
                     <br>
@@ -238,7 +244,7 @@ ________________________________________________________________________________
                         <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-15">
-            <div class="card">
+            <div>
               <div class="card-header">4.Work Atitude and Dicipline(Sikap Kerja& Kedisplinan)</div>
                 <br>
                     <br>
@@ -296,7 +302,7 @@ ________________________________________________________________________________
                       <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-15">
-            <div class="card">
+            <div>
               <div class="card-header">5.Kehadiran Kerja</div>
                 <br>
                     <br>
@@ -357,7 +363,7 @@ ________________________________________________________________________________
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-15">
-            <div class="card">
+            <div>
               <div class="card-header">6.Kemampuan Pribadi</div>
                 <br>
                     <br>
@@ -424,7 +430,7 @@ ________________________________________________________________________________
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-15">
-            <div class="card">
+            <div>
               <div class="card-header">7.Kerja sama dengan rekan kerja departemen lain dan/atau tim kejrja dalam departemen yang sama</div>
                 <br>
                     <br>
@@ -481,7 +487,7 @@ ________________________________________________________________________________
                     <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-15">
-            <div class="card">
+            <div>
               <div class="card-header">8.Daya Analisa & Logika(Menilai Kemampuan Untuk Berfikir Analitis, objectif, dan logis)</div>
                 <br>
                     <br>
@@ -542,7 +548,7 @@ ________________________________________________________________________________
                         <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-15">
-            <div class="card">
+            <div>
               <div class="card-header">9.Inisiatif Kerja</div>
                 <br>
                     <br>
@@ -601,7 +607,7 @@ ________________________________________________________________________________
                       <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-15">
-            <div class="card">
+            <div>
               <div class="card-header">10.Kemampuan membuat skala prioritas</div>
                 <br>
                     <br>
@@ -656,7 +662,7 @@ ________________________________________________________________________________
                                                 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-15">
-            <div class="card">
+            <div>
               <center><h3 class="card-header">Hasil Penilaian Kinerja Keseluruhan</h3></center>
                 <br>
                     <br>

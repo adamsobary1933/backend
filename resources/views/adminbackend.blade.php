@@ -12,7 +12,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet">
 	<!-- ======================= GLOBAL VENDOR STYLES ========================-->
 	<link rel="stylesheet" href="/backend/assets/css/vendor/bootstrap.css">
-	<link rel="shortcut icon" href="assets/backend/img/team.png">
+	<link rel="icon" href="{{ asset ('assets/backend/img/team.png')}}">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="/backend/assets/vendor/metismenu/dist/metisMenu.css">
 	<link rel="stylesheet" href="/backend/assets/vendor/switchery-npm/index.css">
@@ -39,9 +39,7 @@
 
 @include('layouts.backend.headersidebar')
 @include('flash')
-<body style="background-image: url(backend/assets/img/avatars/background.jpg); background-size:100%">
 	@yield('content')
-</body>
 
 																	<!--END PAGE CONTENT -->
 																</div>

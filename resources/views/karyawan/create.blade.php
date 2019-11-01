@@ -1,20 +1,19 @@
 @extends('adminbackend')
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/select2.min.css') }}">
+	<style>
+	.content{
+		background-image:url("{{ asset('backend/assets/img/avatars/background.jpg') }}");
+		background-size: 100%;
+	}
+	</style>
 @endsection
 
-<!DOCTYPE html>
-<html lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-</head>
     @section('content')
-        <body style="background-image: url(backend/assets/img/avatars/background.jpg); background-size:100%">
     <div class="container">
         <div class="row">
             <div class="col-lg-10">
-                <div class="card">
+                <div>
                     <div class="card-header">Tambah Data karyawan</div>
                     <div class="card-body">
                     <form action="{{ route('karyawan.store') }}" method="post" enctype="multipart/form-data">
@@ -66,5 +65,4 @@
         </div>
     </div>
 </body>
-</html>
 @endsection

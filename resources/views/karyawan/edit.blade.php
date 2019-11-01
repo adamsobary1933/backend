@@ -1,13 +1,18 @@
 @extends('adminbackend')
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/select2.min.css') }}">
-<link rel="shortcut icon" href="assets/backend/img/team.png">
+<style>
+	.content{
+		background-image:url("{{ asset('backend/assets/img/avatars/background.jpg') }}");
+		background-size: 100%;
+	}
+	</style>
 @endsection
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div>
                 <div class="card-header">Perpanjang Kontrak Karyawan</div>
                 <div class="card-body">
                     <form action="{{ route('karyawan.update', $karyawan->id) }}" method="post" enctype="multipart/form-data">

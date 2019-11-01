@@ -101,7 +101,7 @@
 							<div class="dropdown-menu dropdown-menu-right dropdown-menu-accout">
 								<div class="dropdown-header pb-3">
 									<div class="media d-user">
-										<img class="align-self-center mr-3 w-40 rounded-circle" src="backend/assets/img/avatars/team.jpg" alt="Albert Einstein">
+										<img class="align-self-center mr-3 w-40 rounded-circle" src="{{ asset ('backend/assets/img/avatars/team.jpg')}}" alt="Albert Einstein">
 										<div class="media-body">
 											<h5 class="mt-0 mb-0"> {{ Auth::user()->name }} </h5>
 											<span>{{ Auth::user()->email }}</span>

@@ -1,12 +1,18 @@
 @extends('adminbackend')
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/select2.min.css') }}">
+<style>
+	.content{
+		background-image:url("{{ asset('backend/assets/img/avatars/background.jpg') }}");
+		background-size: 100%;
+	}
+	</style>
 @endsection
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div>
                 <div class="card-header">Menampilkan Data Karyawan</div>
                 <div class="card-body">
                        <div class="form-row">

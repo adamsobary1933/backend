@@ -8,8 +8,10 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('wadaw', 'PT.Netkrom SolusIndo') }}</title>
+    <title>{{ config('wadaw', 'Login&Register') }}</title>
 
+        <link rel="shortcut icon" href="{{ asset('backend/assets/img/avatars/security.png')}}">
+                                
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>

@@ -14,7 +14,7 @@
         <!-- Styles -->
         <style>
             html, body {
-              background-image:url("assets/backend/img/web.jpg");
+              background-image:url("assets/backend/img/eva.jpg");
                background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
